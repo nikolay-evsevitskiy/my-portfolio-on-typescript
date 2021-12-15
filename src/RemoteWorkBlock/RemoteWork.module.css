@@ -1,0 +1,18 @@
+.RemoteWorkContainer {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.RemoteWorkBlock {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    background-color: #ffd078;
+    margin-top: 20px;
+}

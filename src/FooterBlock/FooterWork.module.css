@@ -1,0 +1,42 @@
+.FooterContainer {
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #deffc6;
+
+
+}
+
+.FooterBlock {
+    flex-direction: column;
+    border: 1px solid;
+    min-height: 20vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px;
+
+}
+
+.iconBlock {
+    min-width: 60%;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    background-color: #ffd078;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.copyBlock {
+    background-color: aqua;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

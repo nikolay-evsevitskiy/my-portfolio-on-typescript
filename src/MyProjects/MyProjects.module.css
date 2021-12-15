@@ -4,20 +4,30 @@
     display: flex;
     justify-content: center;
 }
+
 .myProjectContainer {
     flex-direction: column;
     justify-content: flex-start;
 
 }
+
 .title {
     background-color: white;
     margin-bottom: 80px;
     margin-top: 20px;
 }
+
 .myProjects {
     border: 1px solid;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 874px) {
+    .myProjects {
+        justify-content: center;
+    }
+
 }

@@ -8,6 +8,7 @@
 
 
 }
+
 .ContactsBlock {
     flex-direction: column;
     border: 1px solid;
@@ -19,8 +20,9 @@
     flex-wrap: wrap;
     margin: 30px;
 }
-.ContactsForm  {
-    min-width: 50%;
+
+.ContactsForm {
+    width: 50%;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -33,6 +35,7 @@ input {
     width: 100%;
     margin-bottom: 10px;
 }
+
 textarea {
     background-color: #bdb8af;
     width: 100%;
@@ -45,3 +48,10 @@ textarea {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 430px) {
+    .ContactsForm {
+        width: 100%;
+    }
+}
+

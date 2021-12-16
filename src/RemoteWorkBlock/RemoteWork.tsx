@@ -4,8 +4,8 @@ import {Button} from "../Common/Button/Button";
 import commonStyle from "../Common/Styles/Styles.module.css";
 
 export const RemoteWork = () => {
-    return <div className={style.RemoteWorkContainer}>
-        <div className={`${commonStyle.container} ${style.RemoteWorkBlock}`}>
+    return <div className={style.RemoteWorkBlock}>
+        <div className={`${commonStyle.container} ${style.RemoteWorkContainer}`}>
             <h3 className={style.title}>I am considering options for remote work</h3>
             <Button title={"Hire me!"} address={'#'} />
         </div>

@@ -5,7 +5,7 @@ import commonStyle from "../Common/Styles/Styles.module.css"
 
 export const Main = () => {
     return <div className={style.mainBlock}>
-        <div className={commonStyle.container}>
+        <div className={`${commonStyle.container} ${style.mainContainer}`}>
             <div className={style.text}>
                 <span>Hi There</span>
                 <h1>I am Nikolay Evsevitsky</h1>

@@ -1,6 +1,6 @@
-.ContactsContainer {
+.ContactsBlock {
     width: 100%;
-    min-height: 50vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@
 
 }
 
-.ContactsBlock {
+.ContactsContainer {
     flex-direction: column;
     border: 1px solid;
     min-height: 40vh;
@@ -49,7 +49,7 @@ textarea {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 530px) {
     .ContactsForm {
         width: 100%;
     }

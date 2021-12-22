@@ -12,16 +12,6 @@
     justify-content: flex-start;
 }
 
-.title {
-    font-size: 48px;
-    font-weight: 500;
-    font-family: inherit;
-    margin-bottom: 40px;
-    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .skills {
     border: 1px solid;
     width: 100%;

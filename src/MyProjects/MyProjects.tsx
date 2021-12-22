@@ -14,6 +14,8 @@ export const MyProjects = () => {
                            description={'dipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.'}/>
                 <MyProject title={'Name of project'}
                            description={'dipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.'}/>
+                <MyProject title={'Name of project'}
+                           description={'dipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.'}/>
 
             </div>
 

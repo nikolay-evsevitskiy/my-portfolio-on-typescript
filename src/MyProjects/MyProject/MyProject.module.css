@@ -1,6 +1,6 @@
 .MyProjectBlock {
     width: 350px;
-    background-color: #deffc6;
+    background-color: #191c26;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -18,7 +18,6 @@
 
 .title {
     text-align: left;
-    background-color: white;
     margin: 10px 20px 0px 20px;
 
 }
@@ -26,6 +25,6 @@
 .description {
     text-align: left;
     margin: 10px 20px;
-    background-color: white;
+
 
 }

@@ -1,0 +1,18 @@
+.title {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    clear: both;
+    float: left;
+    text-align: center;
+}
+
+
+
+.title h3 {
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    line-height: 1;
+
+}

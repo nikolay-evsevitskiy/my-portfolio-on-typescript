@@ -2,7 +2,7 @@ import React from "react";
 import style from "./MyProjects.module.css"
 import commonStyle from "../Common/Styles/Styles.module.css"
 import {MyProject} from "./MyProject/MyProject";
-import {Title} from "../Common/Title/Title";
+import {Title} from "../Common/Components/Title/Title";
 
 
 export const MyProjects = () => {

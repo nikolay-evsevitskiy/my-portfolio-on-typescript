@@ -13,7 +13,7 @@ export const MyProject: React.FC<MyProjectPropsType> = ({title, description}) =>
         <div className={style.image}>
             <Button title={"Look"} address={'#'}/>
         </div>
-        <div className={style.title}>{title}</div>
+        <h3 className={style.title}>{title}</h3>
         <div className={style.description}>{description}</div>
 
     </div>

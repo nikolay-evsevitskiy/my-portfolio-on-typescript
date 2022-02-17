@@ -5,6 +5,22 @@
     clear: both;
     float: left;
     text-align: center;
+    position: relative;
+}
+.title h3 {
+    margin: 0;
+}
+
+.title::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #fcac45;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
 }
 
 

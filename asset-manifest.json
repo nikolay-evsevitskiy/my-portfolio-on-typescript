@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/my-portfolio-on-typescript/static/css/main.29560850.css",
-    "main.js": "/my-portfolio-on-typescript/static/js/main.3a33af8e.js",
+    "main.css": "/my-portfolio-on-typescript/static/css/main.5029c39a.css",
+    "main.js": "/my-portfolio-on-typescript/static/js/main.e2556202.js",
     "static/js/787.6c779930.chunk.js": "/my-portfolio-on-typescript/static/js/787.6c779930.chunk.js",
+    "static/media/IMG_9909.jpg": "/my-portfolio-on-typescript/static/media/IMG_9909.d559396ee3c43c2a07bf.jpg",
+    "static/media/SocialNetWork1.png": "/my-portfolio-on-typescript/static/media/SocialNetWork1.e216b0b70228a390097e.png",
+    "static/media/Todolist.png": "/my-portfolio-on-typescript/static/media/Todolist.325d088ab6b50af71eef.png",
+    "static/media/Counter.png": "/my-portfolio-on-typescript/static/media/Counter.aa1d0dd25d91176d9720.png",
     "index.html": "/my-portfolio-on-typescript/index.html",
-    "main.29560850.css.map": "/my-portfolio-on-typescript/static/css/main.29560850.css.map",
-    "main.3a33af8e.js.map": "/my-portfolio-on-typescript/static/js/main.3a33af8e.js.map",
+    "main.5029c39a.css.map": "/my-portfolio-on-typescript/static/css/main.5029c39a.css.map",
+    "main.e2556202.js.map": "/my-portfolio-on-typescript/static/js/main.e2556202.js.map",
     "787.6c779930.chunk.js.map": "/my-portfolio-on-typescript/static/js/787.6c779930.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29560850.css",
-    "static/js/main.3a33af8e.js"
+    "static/css/main.5029c39a.css",
+    "static/js/main.e2556202.js"
   ]
 }

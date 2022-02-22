@@ -1,5 +1,5 @@
 import React from "react";
-import style from './IconButton.module.css'
+import style from './IconButton.module.scss'
 
 type IconButtonPropsType = {
     description: string

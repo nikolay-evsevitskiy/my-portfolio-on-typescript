@@ -1,5 +1,5 @@
 import React from "react";
-import style from './RemoteWork.module.css'
+import style from './RemoteWork.module.scss'
 import {Button} from "../Common/Button/Button";
 import commonStyle from "../Common/Styles/Styles.module.css";
 import {Title} from "../Common/Components/Title/Title";

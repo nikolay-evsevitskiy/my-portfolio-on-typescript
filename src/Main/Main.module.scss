@@ -1,0 +1,46 @@
+@import "../Common/Styles/variables";
+
+.mainBlock {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+
+  .mainContainer {
+    @media screen and (max-width: 752px) {
+      justify-content: center;
+    }
+
+    .text {
+      width: 300px;
+      font-family: $mainFont;
+      margin-bottom: 14px;
+
+      & h1 {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 1.2;
+
+        .fullName {
+          color: $primaryColor;
+        }
+      }
+    }
+
+    .photo {
+      width: 300px;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+

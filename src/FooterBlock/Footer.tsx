@@ -1,5 +1,5 @@
 import React from "react";
-import style from './FooterWork.module.css'
+import style from './FooterWork.module.scss'
 import {IconButton} from "../Common/IconButton/IconButton";
 import commonStyle from "./../Common/Styles/Styles.module.css"
 import {Title} from "../Common/Components/Title/Title";

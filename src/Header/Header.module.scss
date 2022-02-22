@@ -1,8 +1,10 @@
+@import "../Common/Styles/variables";
+
 .header {
     min-height: 100px;
     width: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
-    background-color: #191c26;
+    background-color: $secondBackgroundColor;
 }

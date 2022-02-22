@@ -1,0 +1,35 @@
+@import "./src/Common/Styles/variables.scss";
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0;
+    word-wrap: break-word;
+    font-weight: 400;
+    color: $descriptionText;
+    background: $backgroundColor;
+    margin: 0;
+    font-family: $mainFont;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 600;
+        line-height: 1.5;
+        color: $textColor;
+    }
+}
+
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

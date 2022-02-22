@@ -1,0 +1,45 @@
+@import "../Common/Styles/variables";
+
+.nav {
+  & a {
+    color: $textColor;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+
+    .icon {
+      @media screen and (max-width: 752px) {
+        display: block;
+        color: $textColor;
+        font-size: 25px;
+        margin-right: 20px;
+      }
+    }
+
+    &:hover {
+      border-bottom: 3px solid $primaryColor;
+    }
+  }
+
+  .rowMenu {
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+    padding: 5px;
+    @media screen and (max-width: 752px) {
+      display: none;
+    }
+  }
+
+  .columMenu {
+    display: none;
+    @media screen and (max-width: 752px) {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      margin: 30px;
+    }
+  }
+}
+
+

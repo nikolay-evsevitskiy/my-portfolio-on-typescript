@@ -1,19 +1,28 @@
 {
   "files": {
-    "main.css": "/my-portfolio-on-typescript/static/css/main.5029c39a.css",
-    "main.js": "/my-portfolio-on-typescript/static/js/main.e2556202.js",
+    "main.css": "/my-portfolio-on-typescript/static/css/main.ee704be9.css",
+    "main.js": "/my-portfolio-on-typescript/static/js/main.95550821.js",
     "static/js/787.6c779930.chunk.js": "/my-portfolio-on-typescript/static/js/787.6c779930.chunk.js",
     "static/media/IMG_9909.jpg": "/my-portfolio-on-typescript/static/media/IMG_9909.d559396ee3c43c2a07bf.jpg",
     "static/media/SocialNetWork1.png": "/my-portfolio-on-typescript/static/media/SocialNetWork1.e216b0b70228a390097e.png",
     "static/media/Todolist.png": "/my-portfolio-on-typescript/static/media/Todolist.325d088ab6b50af71eef.png",
+    "static/media/instagram.png": "/my-portfolio-on-typescript/static/media/instagram.e719d8b29f452a16302d.png",
+    "static/media/atom.png": "/my-portfolio-on-typescript/static/media/atom.20acf666d9ee901f47bc.png",
     "static/media/Counter.png": "/my-portfolio-on-typescript/static/media/Counter.aa1d0dd25d91176d9720.png",
+    "static/media/github (1).png": "/my-portfolio-on-typescript/static/media/github (1).648e666260ca9d409a49.png",
+    "static/media/html.png": "/my-portfolio-on-typescript/static/media/html.6e930594286d8afe4c79.png",
+    "static/media/redux.png": "/my-portfolio-on-typescript/static/media/redux.b3b939c66aecf7d53967.png",
+    "static/media/css-3.png": "/my-portfolio-on-typescript/static/media/css-3.463e319bad8e0edf1ef7.png",
+    "static/media/linkedin.png": "/my-portfolio-on-typescript/static/media/linkedin.f249b38224ca41a0b909.png",
+    "static/media/js.png": "/my-portfolio-on-typescript/static/media/js.3dfb665e058d08c99f28.png",
+    "static/media/codewars.svg": "/my-portfolio-on-typescript/static/media/codewars.ae70542faad07e2ab23b27a1df187fa1.svg",
     "index.html": "/my-portfolio-on-typescript/index.html",
-    "main.5029c39a.css.map": "/my-portfolio-on-typescript/static/css/main.5029c39a.css.map",
-    "main.e2556202.js.map": "/my-portfolio-on-typescript/static/js/main.e2556202.js.map",
+    "main.ee704be9.css.map": "/my-portfolio-on-typescript/static/css/main.ee704be9.css.map",
+    "main.95550821.js.map": "/my-portfolio-on-typescript/static/js/main.95550821.js.map",
     "787.6c779930.chunk.js.map": "/my-portfolio-on-typescript/static/js/787.6c779930.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5029c39a.css",
-    "static/js/main.e2556202.js"
+    "static/css/main.ee704be9.css",
+    "static/js/main.95550821.js"
   ]
 }

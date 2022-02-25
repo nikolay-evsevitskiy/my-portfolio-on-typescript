@@ -7,7 +7,7 @@
 
   .ContactsContainer {
     flex-direction: column;
-    border: 1px solid;
+
     min-height: 40vh;
     width: 80%;
     display: flex;
@@ -22,7 +22,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      border: 1px solid;
       @media screen and (max-width: 530px) {
         width: 100%;
       }

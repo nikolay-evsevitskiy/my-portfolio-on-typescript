@@ -10,7 +10,6 @@
 
   .footerContainer {
     flex-direction: column;
-    border: 1px solid;
     min-height: 20vh;
     width: 80%;
     display: flex;
@@ -21,13 +20,12 @@
 
     .iconBlock {
       min-width: 60%;
-      border: 1px solid;
+
       display: flex;
       justify-content: space-between;
     }
 
     .copyBlock {
-      background-color: aqua;
       margin-top: 20px;
       margin-bottom: 20px;
     }

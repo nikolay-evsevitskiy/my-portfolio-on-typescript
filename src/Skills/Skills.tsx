@@ -33,21 +33,26 @@ export const Skills = () => {
             <div className={style.skills}>
                 <Skill title={"React"}
                        styleComponent={reactIcon}
+                       percent={"90"}
                        description={" dipisicing Lorem ipsum dolor sit amet," +
                            " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
                 <Skill title={"Redux"}
                        styleComponent={reduxIcon}
+                       percent={"85"}
                        description={" dipisicing Lorem ipsum dolor sit amet," +
                            " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
                 <Skill title={"JS"}
                        styleComponent={jsIcon}
+                       percent={"80"}
                        description={" dipisicing Lorem ipsum dolor sit amet," +
                            " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
                 <Skill title={"HTML"}
                        styleComponent={htmlIcon}
+                       percent={"100"}
                        description={" dipisicing Lorem ipsum dolor sit amet," +
                            " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
                 <Skill title={"CSS"}
+                       percent={"70"}
                        styleComponent={cssIcon}
                        description={" dipisicing Lorem ipsum dolor sit amet," +
                            " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>

@@ -1,15 +1,22 @@
+@import "src/Common/Styles/variables";
+
 .skillBlock {
   width: 250px;
-  background-color: #deffc6;
+  background-color: $backgroundColor;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+
 
   .icon {
-    width: 60px;
-    height: 60px;
-    background-color: #ffb5e9;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }

@@ -3,9 +3,13 @@ import style from './FooterWork.module.scss'
 import {IconButton} from "../Common/IconButton/IconButton";
 import commonStyle from "./../Common/Styles/Styles.module.css"
 import {Title} from "../Common/Components/Title/Title";
+import reactIconImg from "../assets/images/atom.png";
 
 
 export const Footer = () => {
+    const instagramIcon = {
+        backgroundImage: `url(${reactIconImg})`
+    }
     return <div className={style.footerBlock}>
         <div className={`${commonStyle.container} ${style.footerContainer}`}>
             <Title text={'Nikolay Evsevitsky'} />

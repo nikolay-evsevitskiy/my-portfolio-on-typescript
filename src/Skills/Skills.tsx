@@ -3,26 +3,56 @@ import style from "./Skills.module.scss"
 import commonStyle from "../Common/Styles/Styles.module.css"
 import {Skill} from "./Skill/Skill";
 import {Title} from "../Common/Components/Title/Title";
+import reactIconImg from "../assets/images/atom.png";
+import reduxIconImg from "../assets/images/redux.png";
+import jsIconImg from "../assets/images/js.png";
+import cssIconImg from "../assets/images/css-3.png";
+import htmlIconImg from "../assets/images/html.png";
 
 
 export const Skills = () => {
+    const reactIcon = {
+        backgroundImage: `url(${reactIconImg})`
+    }
+    const reduxIcon = {
+        backgroundImage: `url(${reduxIconImg})`
+    }
+    const jsIcon = {
+        backgroundImage: `url(${jsIconImg})`
+    }
+    const cssIcon = {
+        backgroundImage: `url(${cssIconImg})`
+    }
+    const htmlIcon = {
+        backgroundImage: `url(${htmlIconImg})`
+    }
+
     return <div className={style.skillsBlock}>
         <div className={`${commonStyle.container} ${style.skillsContainer}`}>
             <Title text={"Skills"}/>
             <div className={style.skills}>
                 <Skill title={"JS"}
+                       styleComponent={jsIcon}
                        description={" dipisicing Lorem ipsum dolor sit amet," +
                            " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
                            " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"}/>
                 <Skill title={"CSS"}
+                       styleComponent={cssIcon}
                        description={" dipisicing Lorem ipsum dolor sit amet," +
                            " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
                            " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"}/>
                 <Skill title={"React"}
+                       styleComponent={reactIcon}
                        description={" dipisicing Lorem ipsum dolor sit amet," +
                            " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
                            " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"}/>
-                <Skill title={"React"}
+                <Skill title={"Redux"}
+                       styleComponent={reduxIcon}
+                       description={" dipisicing Lorem ipsum dolor sit amet," +
+                           " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
+                           " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"}/>
+                <Skill title={"HTML"}
+                       styleComponent={htmlIcon}
                        description={" dipisicing Lorem ipsum dolor sit amet," +
                            " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
                            " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"}/>

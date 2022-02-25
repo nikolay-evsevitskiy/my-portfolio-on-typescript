@@ -17,7 +17,7 @@ export const Footer = () => {
 
     return <div className={style.footerBlock}>
         <div className={`${commonStyle.container} ${style.footerContainer}`}>
-            <Title text={'My pages'}/>
+            <Title text={'Follow Me'}/>
             <div className={style.iconBlock}>
                 <IconButton description={'Instagram'} imgAddress={instagramIconImg} urlAddress={instagramAddress}/>
                 <IconButton description={'Linked In'} imgAddress={linkedInIconImg}  urlAddress={linkedInAddress}/>

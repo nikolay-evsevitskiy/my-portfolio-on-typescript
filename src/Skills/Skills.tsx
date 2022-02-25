@@ -31,31 +31,26 @@ export const Skills = () => {
         <div className={`${commonStyle.container} ${style.skillsContainer}`}>
             <Title text={"Skills"}/>
             <div className={style.skills}>
-                <Skill title={"JS"}
-                       styleComponent={jsIcon}
-                       description={" dipisicing Lorem ipsum dolor sit amet," +
-                           " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
-                           " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"}/>
-                <Skill title={"CSS"}
-                       styleComponent={cssIcon}
-                       description={" dipisicing Lorem ipsum dolor sit amet," +
-                           " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
-                           " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"}/>
                 <Skill title={"React"}
                        styleComponent={reactIcon}
                        description={" dipisicing Lorem ipsum dolor sit amet," +
-                           " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
-                           " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"}/>
+                           " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
                 <Skill title={"Redux"}
                        styleComponent={reduxIcon}
                        description={" dipisicing Lorem ipsum dolor sit amet," +
-                           " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
-                           " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"}/>
+                           " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
+                <Skill title={"JS"}
+                       styleComponent={jsIcon}
+                       description={" dipisicing Lorem ipsum dolor sit amet," +
+                           " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
                 <Skill title={"HTML"}
                        styleComponent={htmlIcon}
                        description={" dipisicing Lorem ipsum dolor sit amet," +
-                           " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
-                           " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"}/>
+                           " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
+                <Skill title={"CSS"}
+                       styleComponent={cssIcon}
+                       description={" dipisicing Lorem ipsum dolor sit amet," +
+                           " consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
 
             </div>
 

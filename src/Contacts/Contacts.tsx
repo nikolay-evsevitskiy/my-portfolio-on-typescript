@@ -9,9 +9,10 @@ export const Contacts = () => {
         <div className={`${commonStyle.container} ${style.ContactsContainer}`}>
            <Title text={'Contacts'} />
             <form className={style.ContactsForm} action="">
-                <input type="text"/>
-                <input type="mail"/>
-                <textarea />
+                <input type="text" placeholder={"YOUR NAME"} />
+                <input type="email" placeholder={"YOUR EMAIL"}/>
+                <input type="text" placeholder={"YOUR SUBJECT"}/>
+                <textarea placeholder={"YOUR MESSAGE"}/>
             </form>
             <Button title={"Send"} address={'#'}/>
         </div>

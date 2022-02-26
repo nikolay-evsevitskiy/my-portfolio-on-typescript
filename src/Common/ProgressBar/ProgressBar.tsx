@@ -1,31 +1,27 @@
 import React from 'react';
-import style from './ProgressBar.module.css'
+import style from "./ProgressBar.module.scss";
+import {buildStyles, CircularProgressbarWithChildren} from "react-circular-progressbar";
 
 type ProgressBarType = {
-    percent: string
+    percent: number
 }
 
 const ProgressBar: React.FC<ProgressBarType> = ({percent}) => {
-    const value = percent
-
-    return (
-        <div className={style.container}>
-            <div className={style.card}>
-                <div className={style.box}>
-                    <div className={style.percent}>
-                        <svg>
-                            <circle cx="70" cy="70" r="70"/>
-                            <circle cx="70" cy="70" r="70"/>
-                        </svg>
-                        <div className={style.num}>
-                            <h2>{percent}<span>%</span></h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    );
+    return <div className={style.circleProgressBlock}>
+        <CircularProgressbarWithChildren value={percent}
+                                         className={style.CircularProgressbarWithChildren}
+                                         strokeWidth={10}
+                                         background={true}
+                                         styles={buildStyles({
+                                             strokeLinecap: 'round',
+                                             pathTransitionDuration: 0.8,
+                                             pathColor: `rgba(252, 172, 69, ${percent / 100})`,
+                                             trailColor: '#565555',
+                                             backgroundColor: '#191c26',
+                                         })}>
+            <h3>{percent}%</h3>
+        </CircularProgressbarWithChildren>
+    </div>
 };
 
 export default ProgressBar;

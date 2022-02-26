@@ -22,7 +22,7 @@ export const MyProjects = () => {
     const counterUrlAddress = "https://nikolay-evsevitskiy.github.io/Counter/"
     const socialNetworkUrlAddress = "https://nikolay-evsevitskiy.github.io/todolist/"
 
-    return <div className={style.myProjectBlock}>
+    return <div className={style.myProjectBlock} id={"projectsId"}>
         <div className={`${commonStyle.container} ${style.myProjectContainer}`}>
             <Title text={"My Projects"}/>
             <div className={style.myProjects}>

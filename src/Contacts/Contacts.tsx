@@ -5,7 +5,7 @@ import commonStyle from "../Common/Styles/Styles.module.css";
 import {Title} from "../Common/Components/Title/Title";
 
 export const Contacts = () => {
-    return <div className={style.ContactsBlock}>
+    return <div className={style.ContactsBlock} id={"contactsId"}>
         <div className={`${commonStyle.container} ${style.ContactsContainer}`}>
            <Title text={'Contacts'} />
             <form className={style.ContactsForm} action="">

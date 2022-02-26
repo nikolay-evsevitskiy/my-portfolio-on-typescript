@@ -7,8 +7,8 @@ import {Title} from "../Common/Components/Title/Title";
 export const RemoteWork = () => {
     return <div className={style.RemoteWorkBlock}>
         <div className={`${commonStyle.container} ${style.RemoteWorkContainer}`}>
-            <Title text={'I am considering options for remote work'}/>
-            <Button title={"Hire me!"} address={'#'} />
+            <Title text={'My CV'}/>
+            <Button title={"Download"} address={'#'} />
         </div>
     </div>
 }

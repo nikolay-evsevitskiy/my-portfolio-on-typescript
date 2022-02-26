@@ -1,13 +1,14 @@
 @import "../Styles/variables";
 
 .buttonStyle {
+    padding: 5px;
     text-decoration: none;
     color: $textColor;
     font-size: 20px;
     height: 50px;
     min-width: 90px;
     background-color: #8ddb76;
-    border-radius: 10%;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;

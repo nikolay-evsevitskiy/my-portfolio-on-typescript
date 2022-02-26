@@ -8,14 +8,14 @@ export const Main = () => {
     const myPhoto = {
         backgroundImage: `url(${photoImg})`
     }
-    return <div className={style.mainBlock}>
+    return <div className={style.mainBlock} id={"mainId"}>
         <div className={`${commonStyle.container} ${style.mainContainer}`}>
             <div className={style.text}>
                 <span>Hi There</span>
                 <h1>I am <span className={style.fullName}>Nikolay Evsevitsky</span></h1>
                 <p>Frontent Developer</p>
             </div>
-            <div className={style.photo} style={myPhoto}></div>
+            <div className={style.photo} style={myPhoto}/>
         </div>
 
     </div>

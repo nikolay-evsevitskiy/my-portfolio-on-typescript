@@ -1,6 +1,10 @@
 .contactItem {
   display: flex;
   margin-bottom: 15px;
+  p a {
+    color: white;
+    text-decoration: none;
+  }
 
   .icon {
     width: 40px;

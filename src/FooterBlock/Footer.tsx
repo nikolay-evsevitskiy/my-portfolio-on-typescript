@@ -24,7 +24,7 @@ export const Footer = () => {
                 <IconButton description={'Git Hub'} imgAddress={gitHubIconImg}  urlAddress={gitHubAddress}/>
                 <IconButton description={'Code wars'} imgAddress={codeWarsIconImg}  urlAddress={codeWarsAddress}/>
             </div>
-            <h3 className={style.copyBlock}>©2022 All rights reserved</h3>
+            <h5 className={style.copyBlock}>©2022 All rights reserved</h5>
         </div>
     </div>
 }

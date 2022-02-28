@@ -4,7 +4,7 @@ import style from './ContactItem.module.scss'
 type ContactItemType = {
     title: string
     description: string
-    iconImg: {backgroundImage: string}
+    iconImg: { backgroundImage: string }
 }
 
 const ContactItem: React.FC<ContactItemType> = ({title, description, iconImg}) => {
@@ -13,7 +13,9 @@ const ContactItem: React.FC<ContactItemType> = ({title, description, iconImg}) =
             <div className={style.icon} style={iconImg}/>
             <div>
                 <h4>{title}</h4>
-                <p>{description}</p>
+                <p>{title === 'CALL ME' ? <a href={`tel:${description}`}>{description}</a> :
+                    <a href={`mailto:${description}`}>{description}</a>
+                }</p>
             </div>
         </div>
     );

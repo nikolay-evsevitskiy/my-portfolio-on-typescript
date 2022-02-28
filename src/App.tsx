@@ -6,11 +6,12 @@ import {MyProjects} from "./MyProjects/MyProjects";
 import {MyCV} from "./MyCV/MyCV";
 import {Contacts} from "./Contacts/Contacts";
 import {Footer} from "./FooterBlock/Footer";
+import styles from "./App.module.scss"
 
 
 function App() {
   return (
-      <div className="App">
+      <div className={styles.app}>
         <Header/>
         <Main/>
         <Skills/>

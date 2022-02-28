@@ -4,11 +4,16 @@ import commonStyle from "../Common/Styles/Styles.module.css"
 import photoImg from "../assets/images/IMG_9909.jpg"
 
 
+
+
+
+
 export const Main = () => {
     const myPhoto = {
         backgroundImage: `url(${photoImg})`
     }
     return <div className={style.mainBlock} id={"mainId"}>
+
         <div className={`${commonStyle.container} ${style.mainContainer}`}>
             <div className={style.text}>
                 <span>Hi There</span>

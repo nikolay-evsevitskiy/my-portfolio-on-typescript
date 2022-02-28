@@ -6,5 +6,9 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    background-color: $secondBackgroundColor;
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    z-index: 3;
+    background-color: rgba(25, 28, 38, 0.8);
 }

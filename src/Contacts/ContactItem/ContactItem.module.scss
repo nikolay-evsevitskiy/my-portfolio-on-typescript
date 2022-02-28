@@ -9,4 +9,7 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  @media screen and (max-width: 410px) {
+    flex-direction: column;
+  }
 }

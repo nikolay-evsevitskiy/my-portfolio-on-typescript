@@ -20,9 +20,12 @@
     .mainBlock {
       display: flex;
       width: 100%;
+      @media screen and (max-width: 1118px) {
+        flex-direction: column;
+      }
 
       .myContactsBlock {
-        width: 35%;
+        min-width: 35%;
         padding: 5px;
 
         h3 {
@@ -38,7 +41,7 @@
       }
 
       .ContactsForm {
-        width: 65%;
+        min-width: 65%;
         height: 400px;
         display: flex;
         flex-direction: column;

@@ -1,3 +1,5 @@
+@import "/src/Common/Styles/variables";
+
 .ContactsBlock {
   width: 100%;
   height: 100%;
@@ -22,22 +24,21 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      @media screen and (max-width: 530px) {
-        width: 100%;
-      }
 
       input {
+        border: 0;
         border-radius: 10px;
-        background-color: #252525;
+        background-color: $formBackgroundColor;
         height: 50px;
         width: 100%;
         margin-bottom: 10px;
         padding: 10px;
-        box-shadow: none;
         transition: 0.5s;
+        color: $textColor;
 
-        :focus {
-
+        &:focus {
+          outline: none;
+          border: 1px solid $primaryColor;
         }
       }
 
@@ -45,11 +46,45 @@
         border: 0;
         padding: 10px;
         border-radius: 10px;
-        background-color: #252525;
+        background-color: $formBackgroundColor;
         width: 100%;
         height: 100%;
         margin-bottom: 0;
+        color: $textColor;
 
+        &:focus {
+          outline: none;
+          border: 1px solid $primaryColor;
+        }
+      }
+
+      @media screen and (max-width: 530px) {
+        width: 100%;
+        input {
+          border-radius: 10px;
+          background-color: $formBackgroundColor;
+          height: 50px;
+          width: 100%;
+          margin-bottom: 10px;
+          padding: 10px;
+          transition: 0.5s;
+          color: $textColor;
+
+          &:focus {
+            outline: none;
+            border: 1px solid $primaryColor;
+          }
+        }
+        textarea {
+          border: 0;
+          padding: 10px;
+          border-radius: 10px;
+          background-color: $formBackgroundColor;
+          width: 100%;
+          height: 100%;
+          margin-bottom: 0;
+          color: $textColor;
+        }
       }
     }
   }

@@ -12,7 +12,8 @@ export const Nav = () => {
         {id: 1, tittle: "Main", idLink: "mainId"},
         {id: 2, tittle: "Skills", idLink: "skillsId"},
         {id: 3, tittle: "Projects", idLink: "projectsId"},
-        {id: 4, tittle: "Contacts", idLink: "contactsId"}
+        {id: 4, tittle: "CV", idLink: "cvId"},
+        {id: 5, tittle: "Contacts", idLink: "contactsId"}
     ]
     const [clickMenuButton, setClickMenuButton] = useState<boolean>(false)
     const clickedHandler = () => {

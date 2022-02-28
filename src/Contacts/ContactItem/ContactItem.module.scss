@@ -1,6 +1,7 @@
 .contactItem {
   display: flex;
   margin-bottom: 15px;
+
   .icon {
     width: 40px;
     height: 40px;
@@ -9,6 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
   @media screen and (max-width: 410px) {
     flex-direction: column;
   }

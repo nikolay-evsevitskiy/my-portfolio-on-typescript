@@ -1,0 +1,12 @@
+.contactItem {
+  display: flex;
+  margin-bottom: 15px;
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

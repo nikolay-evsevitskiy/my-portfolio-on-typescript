@@ -9,7 +9,6 @@
 
   .ContactsContainer {
     flex-direction: column;
-
     min-height: 40vh;
     width: 80%;
     display: flex;
@@ -18,49 +17,37 @@
     flex-wrap: wrap;
     margin: 30px;
 
-    .ContactsForm {
-      width: 50%;
-      height: 400px;
+    .mainBlock {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      width: 100%;
 
-      input {
-        border: 0;
-        border-radius: 10px;
-        background-color: $formBackgroundColor;
-        height: 50px;
-        width: 100%;
-        margin-bottom: 10px;
-        padding: 10px;
-        transition: 0.5s;
-        color: $textColor;
+      .myContactsBlock {
+        width: 35%;
+        padding: 5px;
 
-        &:focus {
-          outline: none;
-          border: 1px solid $primaryColor;
+        h3 {
+          font-weight: bolder;
+        }
+
+        p {
+          margin: 5px 5px 15px 0;
+          line-height: 1.4;
+          color: $textColor;
+          font-size: 16px;
         }
       }
 
-      textarea {
-        border: 0;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: $formBackgroundColor;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 0;
-        color: $textColor;
+      .ContactsForm {
+        width: 65%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
 
-        &:focus {
-          outline: none;
-          border: 1px solid $primaryColor;
-        }
-      }
 
-      @media screen and (max-width: 530px) {
-        width: 100%;
         input {
+          border: 0;
           border-radius: 10px;
           background-color: $formBackgroundColor;
           height: 50px;
@@ -69,12 +56,14 @@
           padding: 10px;
           transition: 0.5s;
           color: $textColor;
+          font-size: 14px;
 
           &:focus {
             outline: none;
             border: 1px solid $primaryColor;
           }
         }
+
         textarea {
           border: 0;
           padding: 10px;
@@ -84,9 +73,22 @@
           height: 100%;
           margin-bottom: 0;
           color: $textColor;
+          font-family: $mainFont;
+          font-size: 14px;
+
+          &:focus {
+            outline: none;
+            border: 1px solid $primaryColor;
+          }
+        }
+
+        @media screen and (max-width: 530px) {
+          width: 100%;
         }
       }
     }
+
+
   }
 }
 

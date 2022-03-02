@@ -4,11 +4,22 @@
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  position: relative;
+
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
 
   .mainContainer {
     @media screen and (max-width: 752px) {
       justify-content: center;
     }
+
 
     .text {
       width: 300px;

@@ -1,8 +1,11 @@
+@import "./src/Common/Styles/variables";
+
 .myProjectBlock {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $backgroundColor;
 
   .myProjectContainer {
     height: 80%;

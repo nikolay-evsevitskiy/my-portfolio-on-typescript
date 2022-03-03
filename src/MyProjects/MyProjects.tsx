@@ -6,41 +6,56 @@ import {Title} from "../Common/Components/Title/Title";
 import todolistImage from "../assets/images/Todolist.png";
 import socialNetImage from "../assets/images/SocialNetWork1.png";
 import counterImage from "../assets/images/Counter.png";
+// @ts-ignore
+import Slide from 'react-reveal/Slide';
 
+type MyProjectsDataType = {
+    id: number
+    tittle: string
+    image: { backgroundImage: string }
+    url: string
+    description: string
+}
 
 export const MyProjects = () => {
-    const todolist = {
-        backgroundImage: `url(${todolistImage})`
-    }
-    const socialNet = {
-        backgroundImage: `url(${socialNetImage})`
-    }
-    const counterImg = {
-        backgroundImage: `url(${counterImage})`
-    }
-    const todolistUrlAddress = "https://nikolay-evsevitskiy.github.io/todolist/"
-    const counterUrlAddress = "https://nikolay-evsevitskiy.github.io/Counter/"
-    const socialNetworkUrlAddress = "https://nikolay-evsevitskiy.github.io/todolist/"
+    const myProjectsData: Array<MyProjectsDataType> = [
+        {
+            id: 1,
+            tittle: "Todolist",
+            description: "In this application, you can create various task lists, mark them as completed, sort and edit them",
+            image: {backgroundImage: `url(${todolistImage})`},
+            url: "https://nikolay-evsevitskiy.github.io/todolist/"
+        },
+        {
+            id: 2,
+            tittle: "Social network",
+            description: "This is a social network application, implemented in React, Redux, TypeScript",
+            image: {backgroundImage: `url(${socialNetImage})`},
+            url: "https://nikolay-evsevitskiy.github.io/todolist/"
+        },
+        {
+            id: 3,
+            tittle: "Counter",
+            description: "This is a simple counter application",
+            image: {backgroundImage: `url(${counterImage})`},
+            url: "https://nikolay-evsevitskiy.github.io/Counter/"
+        }
+    ]
 
     return <div className={style.myProjectBlock} id={"projectsId"}>
         <div className={`${commonStyle.container} ${style.myProjectContainer}`}>
             <Title text={"My Projects"}/>
             <div className={style.myProjects}>
-                <MyProject title={"Todolist"}
-                           styleImage={todolist}
-                           urlAddress={todolistUrlAddress}
-                           description={"In this application, you can create various task lists, mark them as completed, sort and edit them"}/>
-                <MyProject title={'Social network'}
-                           styleImage={socialNet}
-                           urlAddress={socialNetworkUrlAddress}
-                           description={"This is a social network application, implemented in React, Redux, TypeScript"}/>
-                <MyProject title={"Counter"}
-                           styleImage={counterImg}
-                           urlAddress={counterUrlAddress}
-                           description={"This is a simple counter application"}/>
+                <Slide right>
+                    {myProjectsData.map(i => <MyProject key={i.id}
+                                                        title={i.tittle}
+                                                        description={i.description}
+                                                        urlAddress={i.url}
+                                                        styleImage={i.image}/>
+                    )}
 
+                </Slide>
             </div>
-
         </div>
     </div>
 }

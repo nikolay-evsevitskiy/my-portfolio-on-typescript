@@ -3,6 +3,9 @@ import style from "./Main.module.scss"
 import commonStyle from "../Common/Styles/Styles.module.css"
 import photoImg from "../assets/images/IMG_9909.jpg"
 import Particles from "react-tsparticles";
+// @ts-ignore
+import Zoom from 'react-reveal/Zoom';
+
 
 
 export const Main = () => {
@@ -97,7 +100,9 @@ export const Main = () => {
                 <h1>I am <span className={style.fullName}>Nikolay Evsevitsky</span></h1>
                 <p>Frontent Developer</p>
             </div>
-            <div className={style.photo} style={myPhoto}/>
+            <Zoom top>
+                <div className={style.photo} style={myPhoto}/>
+            </Zoom>
         </div>
 
     </div>

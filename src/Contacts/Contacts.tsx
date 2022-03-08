@@ -8,6 +8,7 @@ import mailImage from "../assets/images/mail.png";
 // @ts-ignore
 import Slide from 'react-reveal/Slide';
 import * as emailjs from 'emailjs-com';
+import Loader from "../Common/Loader/Loader";
 
 
 type ContactItemInfoType = {
@@ -39,6 +40,8 @@ export const Contacts = () => {
             iconImg: {backgroundImage: `url(${callImage})`}
         }
     ]
+    const [loader, setLoader] = useState<boolean>(false)
+    const [error, setError] = useState<string>('')
     const [toSend, setToSend] = useState<ToSendType>({
         from_name: '',
         reply_to: '',
@@ -47,18 +50,35 @@ export const Contacts = () => {
     })
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        emailjs.sendForm('service_q6pvry9', 'template_tjhsx3w', e.currentTarget,
-            'QQlqwWjjylC1I0nAX')
-            .then(
-                (result) => {
-                    console.log(result.text);
-                },
-                (error) => {
-                    console.log(error.text);
-                }
-            );
-        e.currentTarget.reset()
-
+        setLoader(true)
+        if (toSend.from_name.trim() === '') {
+            setError('Name is required!')
+            setLoader(false)
+        } else if (toSend.reply_to.trim() === '') {
+            setError('Email is required!')
+            setLoader(false)
+        } else if (toSend.message.trim() === '') {
+            setError('Message is required!')
+            setLoader(false)
+        } else {
+            emailjs.sendForm('service_q6pvry9', 'template_tjhsx3w', e.currentTarget,
+                'QQlqwWjjylC1I0nAX')
+                .then(
+                    (result) => {
+                        console.log(result.text);
+                    },
+                    (error) => {
+                        setError(error.text);
+                    }
+                )
+                .catch(err => {
+                    setError(err)
+                })
+                .finally(() => {
+                    setLoader(false)
+                })
+            e.currentTarget.reset()
+        }
 
     }
     const handleChange = (e: any) => {
@@ -107,8 +127,9 @@ export const Contacts = () => {
                             onChange={handleChange}
                             placeholder={"YOUR MESSAGE"}/>
 
-                        {/*<Button  title={"Send"} address={'#'}/>*/}
-                        <button type="submit">Submit</button>
+                        {loader ? <Loader/> : <button type="submit">Send</button>}
+                        {error && <div style={{color: 'red'}}>{error}</div>}
+
                     </form>
 
                 </Slide>

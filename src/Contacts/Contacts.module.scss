@@ -85,6 +85,7 @@
             border: 1px solid $primaryColor;
           }
         }
+
         button {
           padding: 5px;
           text-decoration: none;
@@ -102,6 +103,10 @@
           position: relative;
           z-index: 1;
           border: none;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
 
         @media screen and (max-width: 530px) {

@@ -11,14 +11,13 @@
     .icon {
       @media screen and (max-width: 752px) {
         display: block;
-        color: $textColor;
         font-size: 25px;
         margin-right: 20px;
       }
     }
 
     &:hover {
-      border-bottom: 3px solid $primaryColor;
+      color: $primaryColor;
     }
   }
 
@@ -27,8 +26,14 @@
     width: 500px;
     justify-content: space-evenly;
     padding: 5px;
+
+    .active {
+      color: $primaryColor;
+    }
+
     @media screen and (max-width: 752px) {
       display: none;
+
     }
   }
 

@@ -2,10 +2,10 @@ import React from "react";
 import style from "./Main.module.scss"
 import commonStyle from "../Common/Styles/Styles.module.css"
 import photoImg from "../assets/images/IMG_9909.jpg"
-import Particles from "react-tsparticles";
 import ReactTypingEffect from 'react-typing-effect';
 // @ts-ignore
 import Zoom from 'react-reveal/Zoom';
+import Tilt from 'react-parallax-tilt';
 
 
 export const Main = () => {
@@ -21,7 +21,9 @@ export const Main = () => {
                 <p><ReactTypingEffect text="Front-end Developer"/></p>
             </div>
             <Zoom top>
-                <div className={style.photo} style={myPhoto}/>
+                <Tilt>
+                    <div className={style.photo} style={myPhoto}/>
+                </Tilt>
             </Zoom>
         </div>
 

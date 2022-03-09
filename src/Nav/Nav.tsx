@@ -22,6 +22,7 @@ export const Nav = () => {
     return <div className={style.nav}>
         <div className={style.rowMenu}>
             {navLinks.map(i => <Link key={i.id}
+                                     activeClass={style.active}
                                      spy={true}
                                      smooth={true}
                                      duration={500}

@@ -3,9 +3,9 @@ import style from "./Main.module.scss"
 import commonStyle from "../Common/Styles/Styles.module.css"
 import photoImg from "../assets/images/IMG_9909.jpg"
 import Particles from "react-tsparticles";
+import ReactTypingEffect from 'react-typing-effect';
 // @ts-ignore
 import Zoom from 'react-reveal/Zoom';
-
 
 
 export const Main = () => {
@@ -98,7 +98,7 @@ export const Main = () => {
             <div className={style.text}>
                 <span>Hi There</span>
                 <h1>I am <span className={style.fullName}>Nikolay Evsevitsky</span></h1>
-                <p>Frontent Developer</p>
+                <p><ReactTypingEffect text="Front-end Developer"/></p>
             </div>
             <Zoom top>
                 <div className={style.photo} style={myPhoto}/>

@@ -27,6 +27,16 @@ body {
     color: $textColor;
   }
 }
+.App{
+  > div {
+    &:nth-child(n) {
+      background-color: $backgroundColor;
+    }
+    &:nth-child(2n) {
+      background-color: $secondBackgroundColor;
+    }
+  }
+}
 
 
 code {

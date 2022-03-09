@@ -9,6 +9,7 @@ import mailImage from "../assets/images/mail.png";
 import Slide from 'react-reveal/Slide';
 import * as emailjs from 'emailjs-com';
 import Loader from "../Common/Loader/Loader";
+import s from "../Common/Button/Button.module.scss"
 
 
 type ContactItemInfoType = {
@@ -127,7 +128,7 @@ export const Contacts = () => {
                             onChange={handleChange}
                             placeholder={"YOUR MESSAGE"}/>
 
-                        {loader ? <Loader/> : <button type="submit">Send</button>}
+                        {loader ? <Loader/> : <button className={s.buttonStyle} type="submit">Send</button>}
                         {error && <div style={{color: 'red'}}>{error}</div>}
 
                     </form>

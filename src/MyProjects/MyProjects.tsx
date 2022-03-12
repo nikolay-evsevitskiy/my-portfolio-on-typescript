@@ -39,7 +39,8 @@ export const MyProjects = () => {
             description: "This is a simple counter application",
             image: {backgroundImage: `url(${counterImage})`},
             url: "https://nikolay-evsevitskiy.github.io/Counter/"
-        }
+        },
+
     ]
 
     return <div className={style.myProjectBlock} id={"projectsId"}>

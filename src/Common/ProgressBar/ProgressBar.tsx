@@ -15,7 +15,7 @@ const ProgressBar: React.FC<ProgressBarType> = ({percent}) => {
                                          styles={buildStyles({
                                              strokeLinecap: 'round',
                                              pathTransitionDuration: 0.8,
-                                             pathColor: `rgba(252, 172, 69, ${percent / 100})`,
+                                             pathColor: `#fcac45`,
                                              trailColor: '#565555',
                                              backgroundColor: '#191c26',
                                          })}>

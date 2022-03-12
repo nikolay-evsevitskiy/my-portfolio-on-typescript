@@ -59,12 +59,13 @@ export const Main = () => {
                 <span>Hi There</span>
                 <h1>I am <span className={style.fullName}>Nikolay Evsevitsky</span></h1>
                 <p><ReactTypingEffect text="Front-end Developer"/></p>
-            </div>
+            </div><Tilt>
             <Zoom top>
-                <Tilt>
+
                     <div className={style.photo} style={myPhoto}/>
-                </Tilt>
+
             </Zoom>
+        </Tilt>
         </div>
 
     </div>

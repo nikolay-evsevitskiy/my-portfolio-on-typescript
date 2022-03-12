@@ -4,9 +4,18 @@
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  position: relative;
+  z-index: -1;
 
   .mainContainer {
     position: relative;
+    .animationBlock {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
     @media screen and (max-width: 752px) {
       justify-content: center;
     }
@@ -35,6 +44,7 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      z-index: 2;
       @media screen and (max-width: 752px) {
         width: 400px;
         height: 500px;

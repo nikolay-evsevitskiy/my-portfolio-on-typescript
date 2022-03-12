@@ -31,7 +31,7 @@ export const MyProjects = () => {
             tittle: "Social network",
             description: "This is a social network application, implemented in React, Redux, TypeScript",
             image: {backgroundImage: `url(${socialNetImage})`},
-            url: "https://nikolay-evsevitskiy.github.io/todolist/"
+            url: "https://nikolay-evsevitskiy.github.io/social-network"
         },
         {
             id: 3,

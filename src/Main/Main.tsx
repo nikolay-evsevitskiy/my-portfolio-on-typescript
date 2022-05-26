@@ -63,7 +63,7 @@ export const Main = () => {
             <Zoom top>
 
                     <div className={style.photo} style={myPhoto}/>
-
+                <div></div>
             </Zoom>
         </Tilt>
         </div>

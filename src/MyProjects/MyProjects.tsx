@@ -7,6 +7,7 @@ import todolistImage from "../assets/images/Todolist.png";
 import socialNetImage from "../assets/images/SocialNetWork1.png";
 import counterImage from "../assets/images/Counter.png";
 import chessImage from "../assets/images/chess.png";
+import easterImage from "../assets/images/easter.png";
 // @ts-ignore
 import Slide from 'react-reveal/Slide';
 
@@ -47,6 +48,13 @@ export const MyProjects = () => {
             description: "Game of chess",
             image: {backgroundImage: `url(${chessImage})`},
             url: "https://nikolay-evsevitskiy.github.io/chess-on-react"
+        },
+        {
+            id: 5,
+            tittle: "Easter",
+            description: "Single page site about easter story",
+            image: {backgroundImage: `url(${easterImage})`},
+            url: "https://new-life-church-baranovichi.github.io/easter2022"
         },
 
     ]

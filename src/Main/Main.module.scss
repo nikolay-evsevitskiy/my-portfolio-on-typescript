@@ -5,7 +5,7 @@
   justify-content: center;
   min-height: 100vh;
   position: relative;
-  z-index: -1;
+
 
 
   .mainContainer {
@@ -43,6 +43,7 @@
         width: 400px;
         height: 500px;
         margin-top: 10px;
+        z-index: 3;
       }
     }
   }

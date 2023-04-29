@@ -1,5 +1,6 @@
 import React from "react";
 import style from './Button.module.scss'
+import Tilt from "react-parallax-tilt";
 
 type ButtonPropsType = {
     title: string
@@ -7,7 +8,10 @@ type ButtonPropsType = {
 }
 
 export const Button: React.FC<ButtonPropsType> = ({title, address}) => {
-    return <a className={style.buttonStyle} href={address}>
-        {title}
-    </a>
+    return <Tilt scale={1.5}>
+        <a className={style.buttonStyle} href={address}>
+            {title}
+        </a>
+    </Tilt>
+
 }

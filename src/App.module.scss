@@ -28,11 +28,14 @@ body {
   }
 }
 .App{
+
   > div {
     &:nth-child(n) {
+      z-index: 3;
       background-color: $backgroundColor;
     }
     &:nth-child(2n) {
+      z-index: 3;
       background-color: $secondBackgroundColor;
     }
   }

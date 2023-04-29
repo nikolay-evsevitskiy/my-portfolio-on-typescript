@@ -36,15 +36,15 @@ export const Skills = () => {
     const mySkills: Array<MySkillsType> = [
         {id: 1, title: "React", percent: 70, iconImg: {backgroundImage: `url(${reactIconImg})`}},
         {id: 2, title: "Redux", percent: 65, iconImg: {backgroundImage: `url(${reduxIconImg})`}},
-        {id: 3, title: "JS", percent: 63, iconImg: {backgroundImage: `url(${jsIconImg})`}},
-        {id: 4, title: "TypeScript", percent: 69, iconImg: {backgroundImage: `url(${typeScriptIconImg})`}},
+        {id: 3, title: "JS", percent: 50, iconImg: {backgroundImage: `url(${jsIconImg})`}},
+        {id: 4, title: "TypeScript", percent: 59, iconImg: {backgroundImage: `url(${typeScriptIconImg})`}},
         {id: 5, title: "Redux Toolkit", percent: 39, iconImg: {backgroundImage: `url(${toolkitIconImg})`}},
         {id: 6, title: "Postman", percent: 42, iconImg: {backgroundImage: `url(${postmanIconImg})`}},
         {id: 7, title: "React Hook Form", percent: 46, iconImg: {backgroundImage: `url(${hookFormIconImg})`}},
         {id: 8, title: "React Router", percent: 79, iconImg: {backgroundImage: `url(${reactRouterIconImg})`}},
         {id: 9, title: "Formik", percent: 55, iconImg: {backgroundImage: `url(${formikIconImg})`}},
-        {id: 10, title: "Git", percent: 40, iconImg: {backgroundImage: `url(${gitIconImg})`}},
-        {id: 11, title: "Storybook", percent: 51, iconImg: {backgroundImage: `url(${storyBookIconImg})`}},
+        {id: 10, title: "Git", percent: 30, iconImg: {backgroundImage: `url(${gitIconImg})`}},
+        {id: 11, title: "Storybook", percent: 41, iconImg: {backgroundImage: `url(${storyBookIconImg})`}},
         {id: 12, title: "HTML", percent: 87, iconImg: {backgroundImage: `url(${htmlIconImg})`}},
         {id: 13, title: "CSS", percent: 73, iconImg: {backgroundImage: `url(${cssIconImg})`}},
         {id: 14, title: "Sass", percent: 44, iconImg: {backgroundImage: `url(${sassIconImg})`}},
@@ -60,10 +60,18 @@ export const Skills = () => {
             <div className={style.skills}>
                 <Slide left>
 
-                    {mySkills.map(i => <Tilt><Skill key={i.id}
-                                                    title={i.title}
-                                                    styleComponent={i.iconImg}
-                                                    percent={i.percent}/>
+                    {mySkills.map(i => <Tilt
+                        tiltReverse={true}
+                        glareEnable={true}
+                        glareMaxOpacity={0.8}
+                        glareColor="#ffffff"
+                        glarePosition="bottom"
+                        glareBorderRadius="20px"
+                            key={i.id}>
+                            <Skill key={i.id}
+                                   title={i.title}
+                                   styleComponent={i.iconImg}
+                                   percent={i.percent}/>
                         </Tilt>
                     )}
 

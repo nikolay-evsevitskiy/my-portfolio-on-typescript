@@ -6,6 +6,7 @@ import {Title} from "../Common/Components/Title/Title";
 import cvImage from "../assets/images/MyCv.png";
 // @ts-ignore
 import Slide from 'react-reveal/Slide';
+import Tilt from "react-parallax-tilt";
 
 
 export const MyCV = () => {
@@ -13,12 +14,14 @@ export const MyCV = () => {
         <div className={`${commonStyle.container} ${style.RemoteWorkContainer}`}>
             <Title text={'My CV'}/>
             <Slide left>
-                <div className={style.cvImg} style={{backgroundImage: `url(${cvImage})`}}>
-                    <div className={style.buttonContainer}>
-                        <Button title={"Download"}
-                                address={'https://drive.google.com/file/d/1szUo7dag_8NMpsK8C21BnAI8_EWmTFFB/view?usp=sharing'}/>
+                <Tilt perspective={500} className="parallax-effect">
+                    <div className={style.cvImg} style={{backgroundImage: `url(${cvImage})`}}>
+                        <div className={style.buttonContainer}>
+                            <Button title={"Download"}
+                                    address={'https://drive.google.com/file/d/1szUo7dag_8NMpsK8C21BnAI8_EWmTFFB/view?usp=sharing'}/>
+                        </div>
                     </div>
-                </div>
+                </Tilt>
             </Slide>
         </div>
     </div>

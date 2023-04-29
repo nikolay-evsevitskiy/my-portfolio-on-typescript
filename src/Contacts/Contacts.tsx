@@ -31,13 +31,13 @@ export const Contacts = () => {
         {
             id: 1,
             tittle: 'MAIL ME',
-            description: 'nikolay.evsevitskiy@gmail.com',
+            description: 'nikolay.evsevitski.work@gmail.com',
             iconImg: {backgroundImage: `url(${mailImage})`}
         },
         {
             id: 2,
             tittle: 'CALL ME',
-            description: '+375 (33) 699 02 87',
+            description: '698 214 434',
             iconImg: {backgroundImage: `url(${callImage})`}
         }
     ]

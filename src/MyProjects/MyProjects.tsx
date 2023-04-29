@@ -6,6 +6,7 @@ import {Title} from "../Common/Components/Title/Title";
 import todolistImage from "../assets/images/Todolist.png";
 import socialNetImage from "../assets/images/SocialNetWork1.png";
 import counterImage from "../assets/images/Counter.png";
+import chessImage from "../assets/images/chess.png";
 // @ts-ignore
 import Slide from 'react-reveal/Slide';
 
@@ -39,6 +40,13 @@ export const MyProjects = () => {
             description: "This is a simple counter application",
             image: {backgroundImage: `url(${counterImage})`},
             url: "https://nikolay-evsevitskiy.github.io/Counter/"
+        },
+        {
+            id: 4,
+            tittle: "Chess",
+            description: "Game of chess",
+            image: {backgroundImage: `url(${chessImage})`},
+            url: "https://nikolay-evsevitskiy.github.io/chess-on-react"
         },
 
     ]

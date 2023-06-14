@@ -10,6 +10,7 @@ import Slide from 'react-reveal/Slide';
 import * as emailjs from 'emailjs-com';
 import Loader from "../Common/Loader/Loader";
 import s from "../Common/Button/Button.module.scss"
+import axios from "axios";
 
 
 type ContactItemInfoType = {
@@ -62,6 +63,7 @@ export const Contacts = () => {
             setError('Message is required!')
             setLoader(false)
         } else {
+            //axios.post('http://localhost:3010/',toSend)
             emailjs.sendForm('service_q6pvry9', 'template_tjhsx3w', e.currentTarget,
                 'QQlqwWjjylC1I0nAX')
                 .then(
